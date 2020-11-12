@@ -70,8 +70,8 @@ const listenOrientationChange = that => {
  * listenOrientationChange function has been invoked. This should be done in order to
  * avoid adding new listeners every time the same component is re-mounted.
  */
-const removeOrientationListener = () => {
-  const removeOrientationListener = orientationChangeHandler => {
+
+const removeOrientationListener = orientationChangeHandler => {
   // Warn if the original handler not passed.
   if (!orientationChangeHandler) {
     console.warn('Please push back the original handler to be removed');
